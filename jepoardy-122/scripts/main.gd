@@ -1,7 +1,7 @@
-extends Node
+extends Node2D
 
-@onready var gm: Node = $GameManager
-@onready var menu: CanvasLayer = $Menu
+@onready var gm: Node2D = $GameManager
+@onready var menu:  CanvasLayer = $Menu
 @onready var board: Node2D = $Board
 @onready var qs: CanvasLayer = $QuestionScreen
 
@@ -40,7 +40,7 @@ func _on_tile_selected(category: String, value: int) -> void:
 	if gm.is_used(category, value):
 		return
 
-	var q := gm.get_question(category, value)
+	var q: Dictionary = gm.get_question(category, value)
 	qs.open(category, value, q["q"])
 
 func _on_answered(category: String, value: int, correct: bool) -> void:

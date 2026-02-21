@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbilka436cvng"]
+
+[ext_resource type="Script" uid="uid://cvv1h5gwquuft" path="res://scripts/menu.gd" id="1_klgdb"]
+
+[node name="Menu" type="CanvasLayer"]
+script = ExtResource("1_klgdb")

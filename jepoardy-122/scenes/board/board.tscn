@@ -1,10 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3qp5lr725hoe"]
+[gd_scene load_steps=3 format=3 uid="uid://c3qp5lr725hoe"]
 
+[ext_resource type="Script" uid="uid://chf8lalhr4vlt" path="res://scripts/board.gd" id="1_jnyf0"]
 [ext_resource type="Texture2D" uid="uid://cansnl8ft4ob0" path="res://assets/sprites/board.png" id="1_s78fa"]
 
 [node name="Board" type="Node2D"]
+script = ExtResource("1_jnyf0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(578.5, 326.375)
 scale = Vector2(0.7480469, 0.63159174)
 texture = ExtResource("1_s78fa")
+
+[node name="ButtonsLayer" type="Node2D" parent="."]
