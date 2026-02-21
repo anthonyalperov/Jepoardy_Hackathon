@@ -1,0 +1,27 @@
+{
+  "LinkedList": {
+    "100": { "q": "Time complexity to insert at head of a singly linked list?", "a": "O(1)" },
+    "200": { "q": "What links nodes together in a singly linked list?", "a": "Next pointer/reference" },
+    "300": { "q": "What extra pointer does a doubly linked list have?", "a": "Previous pointer/reference" }
+  },
+  "Arrays": {
+    "100": { "q": "Time complexity to access arr[i]?", "a": "O(1)" },
+    "200": { "q": "Why is insertion in the middle expensive?", "a": "Elements must shift" },
+    "300": { "q": "Static vs dynamic array difference?", "a": "Dynamic resizes; static fixed" }
+  },
+  "BST": {
+    "100": { "q": "Average search time in a balanced BST?", "a": "O(log n)" },
+    "200": { "q": "BST rule for left subtree values?", "a": "Less than node" },
+    "300": { "q": "Worst-case BST search time if skewed?", "a": "O(n)" }
+  },
+  "Queues": {
+    "100": { "q": "Queue is FIFO or LIFO?", "a": "FIFO" },
+    "200": { "q": "Two core queue operations?", "a": "Enqueue, Dequeue" },
+    "300": { "q": "Common efficient queue implementation?", "a": "Circular array or linked list" }
+  },
+  "Stacks": {
+    "100": { "q": "Stack is FIFO or LIFO?", "a": "LIFO" },
+    "200": { "q": "Two core stack operations?", "a": "Push, Pop" },
+    "300": { "q": "What does peek do?", "a": "Read top without removing" }
+  }
+}
