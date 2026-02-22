@@ -1,0 +1,20 @@
+1. queues 100 - T/f
+2. queues 200 - Multiple choice
+3. queues 300 - T/f
+4. queues 400 - Multiple choice
+5. BST 100 - T/f
+6. BST 200 - Multiple choice
+7. BST 300 - T/f
+8. BST 400 - Multiple choice
+9. List 100 - T/f
+10. List 200 - Multiple choice
+11. List 300 - T/f
+12. List 400 - Multiple choice
+13. Array 100 - T/f
+14. Array 200 - Multiple choice
+15. Array 300 - T/f 
+16. Array 400 - Multiple choice
+17. Stacks 100 - T/f
+18. Stacks 200 - Multiple choice
+19. Stacks 300 - T/f
+20. Stacks 400 - Multiple choice
