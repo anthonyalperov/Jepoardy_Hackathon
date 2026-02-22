@@ -1,43 +1,49 @@
-1. queues 100 - T/f
-2. queues 200 - Multiple choice
-3. queues 300 - T/f
-4. queues 400 - Multiple choice
-5. BST 100 - T/f
-6. BST 200 - Multiple choice
-7. BST 300 - T/f
-8. BST 400 - Multiple choice
-9. List 100 - T/f
-10. List 200 - Multiple choice
-11. List 300 - T/f
-12. List 400 - Multiple choice
-13. Array 100 - T/f
-14. Array 200 - Multiple choice
-15. Array 300 - T/f 
-16. Array 400 - Multiple choice
-17. Stacks 100 - T/f
-18. Stacks 200 - Multiple choice
-19. Stacks 300 - T/f
-20. Stacks 400 - Multiple choice
+Queues
 
+Queues 100 — True
 
-Answer Key:
-1. queues 100 - T
-2. quess 200 - A
-3. queues 300 - T
-4. queues 400 - B
-5. BST 100 - T
-6. BST 200 - B
-7. BST 300 - T
-8. BST 400 - C
-9. List 100 - T
-10. List 200 - Character stream
-11. List 300 - T
-12. List 400 - B
-13. Array 100 - F
-14. Array 200 - C
-15. Array 300 - T
-16. Array 400 - B
-17. Stacks 100 - T
-18. Stacks 200 - B
-19. Stacks 300 - T
-20. Stacks 400 - B
+Queues 200 — A
+
+Queues 300 — True
+
+Queues 400 — B
+
+Binary Search Trees (BST)
+
+BST 100 — True
+
+BST 200 — B
+
+BST 300 — True
+
+BST 400 — C
+
+Lists
+
+List 100 — True
+
+List 200 — Character stream
+
+List 300 — True
+
+List 400 — B
+
+Arrays
+
+Array 100 — False
+
+Array 200 — C
+
+Array 300 — True
+
+Array 400 — B
+
+Stacks
+
+Stacks 100 — True
+
+Stacks 200 — B
+
+Stacks 300 — True
+
+Stacks 400 — B
