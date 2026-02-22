@@ -18,3 +18,26 @@
 18. Stacks 200 - Multiple choice
 19. Stacks 300 - T/f
 20. Stacks 400 - Multiple choice
+
+
+Answer Key:
+1. queues 100 - T
+2. quess 200 - A
+3. queues 300 - T
+4. queues 400 - B
+5. BST 100 - T
+6. BST 200 - B
+7. BST 300 - T
+8. BST 400 - C
+9. List 100 - T
+10. List 200 - Character stream
+11. List 300 - T
+12. List 400 - B
+13. Array 100 - F
+14. Array 200 - C
+15. Array 300 - T
+16. Array 400 - B
+17. Stacks 100 - T
+18. Stacks 200 - B
+19. Stacks 300 - T
+20. Stacks 400 - B
