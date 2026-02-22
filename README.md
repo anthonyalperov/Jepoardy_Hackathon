@@ -1,11 +1,17 @@
 # Jepoardy_Hackathon 
 - Project: Jeopardy Hackathon -
 
-Project Team and Roles:
-- Tony Alperov - Team Lead
-- Saed Hussein - Main design
-- Neto Udezeh - Program director
-- Nahom Tadesse - Video/Production editor
+Project Team & Roles
 
-- Summary: The prompt given was to re event the wheel. And in this sense we plan to re event studying in a playful more engaging manner. Were using the concept and format of jeopardy to be the layout of the study table and having engaging pictures in the background as form of engagment. The main focus is to be able to review 122 concepts with this game to be much better prepared for oncoming 122 exams.
-  
+Tony Alperov — Team Lead
+
+Saed Hussein — Lead Designer
+
+Neto Udezeh — Program Director
+
+Nahom Tadesse — Video & Production Editor
+
+Project Summary
+The objective of this hackathon was to “reinvent the wheel” by creating an innovative approach to studying that is more interactive and engaging. Our team developed a Jeopardy-style learning platform designed to transform traditional review sessions into a game-based experience.
+
+The project incorporated structured question categories, visual elements, and interactive gameplay mechanics to improve engagement and knowledge retention. The platform was specifically designed to help students review over 122 course concepts in preparation for upcoming CPTS 122 exams, making studying more effective and enjoyable.
