@@ -1,14 +1,178 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3qp5lr725hoe"]
+[gd_scene load_steps=4 format=3 uid="uid://c3qp5lr725hoe"]
 
 [ext_resource type="Script" uid="uid://chf8lalhr4vlt" path="res://scripts/board.gd" id="1_jnyf0"]
-[ext_resource type="Texture2D" uid="uid://cansnl8ft4ob0" path="res://assets/sprites/board.png" id="1_s78fa"]
+[ext_resource type="Texture2D" uid="uid://cansnl8ft4ob0" path="res://assets/sprites/board.png" id="2_jnyf0"]
+[ext_resource type="Texture2D" uid="uid://dq85ishufy3xc" path="res://assets/sprites/blackpic.png" id="3_knosr"]
 
 [node name="Board" type="Node2D"]
 script = ExtResource("1_jnyf0")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(578.5, 326.375)
-scale = Vector2(0.7480469, 0.63159174)
-texture = ExtResource("1_s78fa")
+[node name="BoardImage" type="TextureRect" parent="."]
+z_index = -1
+offset_left = -4.0
+offset_top = -23.0
+offset_right = 1148.0
+offset_bottom = 794.0
+texture = ExtResource("2_jnyf0")
+expand_mode = 5
+stretch_mode = 5
 
-[node name="ButtonsLayer" type="Node2D" parent="."]
+[node name="Hotspots" type="Control" parent="."]
+z_index = 2
+layout_mode = 3
+anchors_preset = 0
+offset_left = 578.5
+offset_top = 326.375
+offset_right = 578.5
+offset_bottom = 326.375
+scale = Vector2(0.7480469, 0.63159174)
+
+[node name="LinkedList100" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -630.3081
+offset_top = -190.58989
+offset_right = -377.00262
+offset_bottom = -54.425995
+
+[node name="LinkedList200" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -611.59265
+offset_top = -51.2594
+offset_right = -386.36023
+offset_bottom = 64.99884
+
+[node name="LinkedList300" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -632.98175
+offset_top = 67.48819
+offset_right = -382.32904
+offset_bottom = 197.31888
+
+[node name="LinkedList400" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -608.91907
+offset_top = 192.569
+offset_right = -373.6397
+offset_bottom = 310.41052
+
+[node name="Arrays100" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -380.32376
+offset_top = -181.09007
+offset_right = -145.0444
+offset_bottom = -60.081924
+
+[node name="Arrays200" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -377.65015
+offset_top = -49.676075
+offset_right = -138.36035
+offset_bottom = 71.33208
+
+[node name="Arrays300" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -374.9765
+offset_top = 75.40471
+offset_right = -143.70755
+offset_bottom = 186.91304
+
+[node name="Arrays400" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -373.63968
+offset_top = 198.90228
+offset_right = -142.37076
+offset_bottom = 318.32703
+
+[node name="BST100" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -115.63446
+offset_top = -182.67334
+offset_right = 115.63446
+offset_bottom = -63.248596
+
+[node name="BST200" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -122.31853
+offset_top = -56.009262
+offset_right = 108.95039
+offset_bottom = 63.41548
+
+[node name="BST300" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -126.328964
+offset_top = 65.90494
+offset_right = 104.93996
+offset_bottom = 185.32968
+
+[node name="BST400" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = -126.328964
+offset_top = 197.31894
+offset_right = 104.93996
+offset_bottom = 316.74368
+
+[node name="Queues100" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = 122.31854
+offset_top = -182.67334
+offset_right = 353.58746
+offset_bottom = -63.248596
+
+[node name="Queues200" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = 127.6658
+offset_top = -54.42595
+offset_right = 358.93472
+offset_bottom = 64.998795
+
+[node name="Queues300" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = 120.98175
+offset_top = 65.90494
+offset_right = 352.25067
+offset_bottom = 185.32968
+
+[node name="Queues400" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = 116.97128
+offset_top = 197.31894
+offset_right = 348.2402
+offset_bottom = 316.74368
+
+[node name="Stacks100" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = 366.95566
+offset_top = -187.42325
+offset_right = 598.2246
+offset_bottom = -67.998505
+
+[node name="Stacks200" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = 369.62924
+offset_top = -51.259354
+offset_right = 600.8982
+offset_bottom = 68.16539
+
+[node name="Stacks300" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = 369.62924
+offset_top = 67.488235
+offset_right = 600.8982
+offset_bottom = 186.91298
+
+[node name="Stacks400" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_left = 369.62924
+offset_top = 197.31894
+offset_right = 600.8982
+offset_bottom = 316.74368
+
+[node name="QuestionScreen" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 471.0
+offset_top = 580.0
+offset_right = 665.0
+offset_bottom = 632.0
+texture = ExtResource("3_knosr")
+expand_mode = 1

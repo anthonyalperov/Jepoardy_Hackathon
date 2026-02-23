@@ -10,14 +10,11 @@
 script = ExtResource("1_6q06x")
 
 [node name="GameManager" type="Node2D" parent="."]
+visible = false
 script = ExtResource("2_ow5a4")
 
 [node name="Menu" parent="." instance=ExtResource("1_k2fmo")]
-script = null
 
 [node name="Board" parent="." instance=ExtResource("1_iuonh")]
-script = null
 
 [node name="QuestionScreen" parent="." instance=ExtResource("3_l3cfh")]
-visible = false
-script = null

@@ -1,61 +1,43 @@
 extends Node2D
 
-signal tile_selected(category: String, value: int)
+signal tile_pressed(category, value)
 
-@onready var hotspots: Node2D = $Hotspots
+@onready var hotspot_container = $Hotspots
 
-# Categories and question values
-const CATEGORIES := ["LinkedList", "Arrays", "BST", "Queues", "Stacks"]
-const VALUES     := [100, 200, 300, 400]  # added 400
 
-# Positioning (adjust to match your board.png)
-@export var grid_origin := Vector2(155, 240)  # top-left of first tile (100 under LinkedList)
-@export var tile_size  := Vector2(170, 86)
-@export var gap        := Vector2(28, 18)
+func _ready():
 
-var buttons: Dictionary = {} # key "cat:value" -> Button
+	var categories = [
+		"Lists",
+		"Array",
+		"BST",
+		"Queues",
+		"Stacks"
+	]
 
-func _ready() -> void:
-	_build_hotspots()
+	var values = [100, 200, 300, 400]
 
-func _build_hotspots() -> void:
-	# Clear old buttons
-	for c in hotspots.get_children():
-		c.queue_free()
-	buttons.clear()
+	var buttons = hotspot_container.get_children()
 
-	for col in range(CATEGORIES.size()):
-		for row in range(VALUES.size()):
-			var cat = CATEGORIES[col]
-			var val = VALUES[row]
+	if buttons.size() != 20:
+		print("WARNING: Need exactly 20 buttons inside Hotspots")
 
-			var b = Button.new()
-			b.flat = true
-			b.focus_mode = Control.FOCUS_NONE
-			b.mouse_filter = Control.MOUSE_FILTER_STOP
-			b.modulate.a = 0.0   # invisible
-			b.size = tile_size
-			b.position = grid_origin + Vector2(
-				col * (tile_size.x + gap.x),
-				row * (tile_size.y + gap.y)
+	var index = 0
+
+	for c in range(categories.size()):
+		for v in range(values.size()):
+
+			if index >= buttons.size():
+				return
+
+			var btn = buttons[index]
+
+			var category = categories[c]
+			var value = values[v]
+
+			btn.pressed.connect(func():
+				print("Pressed:", category, value)
+				emit_signal("tile_pressed", category, value)
 			)
 
-			# Bind the current category/value
-			b.pressed.connect(func(c: String, v: int):
-				emit_signal("tile_selected", c, v)
-			).bind(cat, val)
-
-			hotspots.add_child(b)
-			buttons[_key(cat, val)] = b
-
-# Disable used tiles
-func refresh_used(used: Dictionary) -> void:
-	for k in buttons.keys():
-		var b: Button = buttons[k]
-		var is_used = bool(used.get(k, false))
-		b.disabled = is_used
-		b.modulate.a = 0.15 if is_used else 0.0
-
-# Helper for dictionary keys
-func _key(category: String, value: int) -> String:
-	return "%s:%d" % [category, value]
+			index += 1

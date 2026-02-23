@@ -1,6 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://dbh5vntfa43oe"]
+[gd_scene load_steps=3 format=3 uid="uid://dbh5vntfa43oe"]
 
 [ext_resource type="Script" uid="uid://bggl5eoa3iodp" path="res://scripts/question_screen.gd" id="1_wicoq"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wicoq"]
+
 [node name="QuestionScreen" type="CanvasLayer"]
 script = ExtResource("1_wicoq")
+
+[node name="QuestionImage" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.003
+offset_left = -1.0
+offset_top = -1.0
+offset_right = -2.0
+offset_bottom = 3.0559692
+texture = SubResource("CompressedTexture2D_wicoq")
+expand_mode = 1
